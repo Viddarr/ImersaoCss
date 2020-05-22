@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("https://img.freepik.com/fotos-gratis/papel-de-parede-de-textura-grunge-escuro-projetado_23-2147951287.jpg?size=1256&ext=jpg");
+  background-size: 100vw 360vh;
+  font-family: Moonspace;
+}
+header{
+  height:90vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.menu {
+  background-color:#383138;
+  position:fixed;
+  width:100vw;
+  top: 0;
+  z-index: 1;
+}
+.menu ul { 
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:#E6BE1E
+}
+
+.menu Li{
+  list-style: none;
+}
+.menu a{
+  display: block;
+  padding:10px 20px;
+}
+
+
+nav ul li a {
+    color: #17AC4E;
+}
+.site-subtitle,
+.site-title{
+  color: #33BA8B;
+  text-align: center;
+   font-size: 54px;
+}
+.site-subtitle{
+  font-style: italic;
+}
+a{
+   font-size: 22px;
+}
+::selection {
+    background: #D8C226;
+    color: #C42196;
+}
+
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+}
+
+.portfolio h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #33BA8B;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: left bottom;
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover{
+    transform:scale(1.2);
+}
+
+.portfolio h2{
+  text-align: center;
+}
+
+.sobre p{
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  color: #33BA8B;
+  text-indent:1em;
+  text-justify: justify;
+}
+
+.sobre h2,
+.contato h2{
+    font-family: 'Press Start 2P', cursive;
+    color: #33BA8B;
+    margin: 1em;
+    font-size: 2em;
+}
+
+.sobre{
+  padding: 2em;
+  min-height: 100vh;
+}
+
+.sobre img{
+  height:350px ;
+  width:350px ;
+  border-radius:10% ;
+}
+
+.sobre .avatar{
+  float: left;
+  margin-right: 2em;
+}
+
+.contato a{
+  font-size: 4em;
+  color: #33BA8B;
+  margin: 15px;
+}
+figcaption{
+  font-size: 24px;
+  color: #33BA8B;
+}
+.contato .icons{
+   text-align: left;
+}
+.contato a:hover{
+  text-decoration: none;
+  text-shadow:0px 0px 10px darkgoldenrod;
+}
+figcaption:hover{
+  text-decoration: underline;
+  color:#E6BE1E
+}
+.gmail{
+  font-family: 'Press Start 2P', cursive;
+    color: #33BA8B;
+    font-size: 1em;
+    background-color:#383138;
+    padding:10px 20px;
+}
